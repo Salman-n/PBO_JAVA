@@ -7,7 +7,7 @@ package ProjectPengubinan;
 
 /**
  *
- * @author asus
+ * @author Salman
  */
 public class Ubin {
     int panjang;

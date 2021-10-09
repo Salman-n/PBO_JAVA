@@ -7,7 +7,7 @@ package ProjectPengubinan;
 
 /**
  *
- * @author asus
+ * @author Salman
  */
 public class ProjectPengubinan {
        public static void main(String[]args){
