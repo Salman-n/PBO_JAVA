@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package minmaxproject;
+package sortingproject;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class ArrayProcessing {
     int [] dataBil = new int[100];
-    int n,a;
+    int n,a,j;
     
     void input(){
         Scanner input = new Scanner(System.in);
@@ -50,10 +50,30 @@ public class ArrayProcessing {
         }
         return max;
     }
+  int urutkan(int[] arr){
+        int temp = arr[0];
+        for(a = 0; a < (this.n-1); a++){
+            for(j=0;j<(this.n-a-1);j++){
+                if(arr[j] > arr[j+1]){
+                    temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        } 
+    return temp;
+    }
+    
+    
+	
+    
+    
+    
    
     void output(){
     System.out.println("Rerata      : " + this.hitungRerata(this.dataBil));
     System.out.println("Nilai min   : " + this.cariMin(this.dataBil));
-    System.out.println("Milai max   : " + this.cariMax(this.dataBil));
+    System.out.println("Nilai max   : " + this.cariMax(this.dataBil));
+    System.out.println("Sort        : " + this.urutkan(this.dataBil));
     }   
 }
