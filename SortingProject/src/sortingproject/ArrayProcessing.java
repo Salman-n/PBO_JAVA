@@ -19,48 +19,48 @@ public class ArrayProcessing {
                 this.dataBil[a] = input.nextInt();
             }
     }
-    double hitungRerata(int[] arr){
+    double hitungRerata(int[] dataArray){
         double sum = 0;
         for(a=0;a<this.n;a++){
-            sum += arr[a];
+            sum += dataArray[a];
         }
         double rerata = sum/this.n;
         return rerata;
     }
-     int cariMax(int[] arr){
-        int max = arr[0];
+     int cariMax(int[] dataArray){
+        int max = dataArray[0];
         for( a=0;a<this.n;a++){
-            if (max<arr[a]){
-                max = arr[a];
+            if (max<dataArray[a]){
+                max = dataArray[a];
             }
         }
         return max;
     }
-    int cariMin(int[] arr){
-        int min = arr[0];
+    int cariMin(int[] dataArray){
+        int min = dataArray[0];
         for(a=0;a<this.n;a++){
-            if (min>arr[a]){
-                min = arr[a];
+            if (min>dataArray[a]){
+                min = dataArray[a];
             }
         }
         return min;
     }
     int []urutkan(){
-       int[] arr = this.dataBil;
+       int[] dataArray = this.dataBil;
        for (a = this.n - 1; a >= 0; a--) {
             for (j = 0; j < a; j++) {
-                if(arr[j] > arr[j+1]){
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1]=temp;
+                if(dataArray[j] > dataArray[j+1]){
+                    int temp = dataArray[j];
+                    dataArray[j] = dataArray[j+1];
+                    dataArray[j+1]=temp;
                 }
             }
         
         } 
         for(int i=0;i<n;i++){
-           System.out.println(arr[i]);
+           System.out.println(dataArray[i]);
         }
-       return arr;
+       return dataArray;
     }
   
 
@@ -76,7 +76,7 @@ public class ArrayProcessing {
     System.out.println("Nilai min     : " + this.cariMin(this.dataBil));
     System.out.println("Nilai max     : " + this.cariMax(this.dataBil));
     System.out.println("Sort : ");
-    int[] arr = this.urutkan();
+    int[] dataArray = this.urutkan();
     
     }
 
