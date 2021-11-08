@@ -36,12 +36,12 @@ public class AppArrayList {
     void Menghapus_Data() {
         Scanner menghapus = new Scanner(System.in);
         System.out.println("Silahkan String yang mau dihapus : ");
-        String menghps = menghapus.nextLine();
-        if(binarySearch(DATA,menghps) > -1){
-            DATA.remove(binarySearch(DATA,menghps));
-            System.out.println("String " + menghps + " sudah dihapus di dalam data.");
+        String menghapuskan = menghapus.nextLine();
+        if(binarySearch(DATA,menghapuskan) > -1){
+            DATA.remove(binarySearch(DATA,menghapuskan));
+            System.out.println("String " + menghapuskan + " sudah dihapus di dalam data.");
         } else {
-            System.out.println("String " + menghps + " tidak ada dalam data.");
+            System.out.println("String " + menghapuskan + " tidak ada dalam data.");
         }
         
     }
