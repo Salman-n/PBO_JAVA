@@ -24,28 +24,28 @@ public class ArrayProcessing {
                 this.dataBil[a] = input.nextInt();
             }
     }
-    double hitungRerata(int[] arr){
+    double hitungRerata(int[] dataArray){
         double sum = 0;
         for(a=0;a<this.n;a++){
-            sum += arr[a];
+            sum += dataArray[a];
         }
         double rerata = sum/this.n;
         return rerata;
     }
-    int cariMax(int[] arr){
-        int max = arr[0];
+    int cariMax(int[] dataArray){
+        int max = dataArray[0];
         for( a=0;a<this.n;a++){
-            if (max<arr[a]){
-                max = arr[a];
+            if (max<dataArray[a]){
+                max = dataArray[a];
             }
         }
         return max;
     }
-    int cariMin(int[] arr){
-        int min = arr[0];
+    int cariMin(int[] dataArray){
+        int min = dataArray[0];
         for(a=0;a<this.n;a++){
-            if (min>arr[a]){
-                min = arr[a];
+            if (min>dataArray[a]){
+                min = dataArray[a];
             }
         }
         return min;
