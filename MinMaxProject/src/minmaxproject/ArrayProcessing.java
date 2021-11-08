@@ -9,43 +9,43 @@ import java.util.Scanner;
 
 /**
  *
- * @author user
+ * @author Salman
  */
 public class ArrayProcessing {
     int [] dataBil = new int[100];
-    int n,i;
+    int n,a;
     
     void input(){
         Scanner input = new Scanner(System.in);
         System.out.println("Masukan Input data : ");
         this.n = input.nextInt();
-            for(i = 0; i < n; i++){
-                System.out.println("Masukan bil ke - " + (i+1)+ " : ");
-                this.dataBil[i] = input.nextInt();
+            for(a = 0; a < n; a++){
+                System.out.println("Masukan bil ke - " + (a+1)+ " : ");
+                this.dataBil[a] = input.nextInt();
             }
     }
     double hitungRerata(int[] arr){
         double sum = 0;
-        for(i=0;i<this.n;i++){
-            sum += arr[i];
+        for(a=0;a<this.n;a++){
+            sum += arr[a];
         }
         double rerata = sum/this.n;
         return rerata;
     }
      int cariMin(int[] arr){
         int min = arr[0];
-        for(int i=1;i<this.n;i++){
-            if (min>arr[i]){
-                min = arr[i];
+        for(int a=1;a>this.n;a++){
+            if (min>arr[a]){
+                min = arr[a];
             }
         }
         return min;
     }
     int cariMax(int[] arr){
         int max = arr[0];
-        for(int i=1;i<this.n;i++){
-            if (max<arr[i]){
-                max = arr[i];
+        for(int a=1;a<this.n;a++){
+            if (max<arr[a]){
+                max = arr[a];
             }
         }
         return max;

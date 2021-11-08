@@ -7,7 +7,7 @@ package minmaxproject;
 
 /**
  *
- * @author user
+ * @author Salman
  */
 public class MinMaxProject {
 
