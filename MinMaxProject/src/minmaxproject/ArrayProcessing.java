@@ -32,23 +32,23 @@ public class ArrayProcessing {
         double rerata = sum/this.n;
         return rerata;
     }
-     int cariMin(int[] arr){
-        int min = arr[0];
-        for(int a=1;a>this.n;a++){
-            if (min>arr[a]){
-                min = arr[a];
-            }
-        }
-        return min;
-    }
     int cariMax(int[] arr){
         int max = arr[0];
-        for(int a=1;a<this.n;a++){
+        for( a=0;a<this.n;a++){
             if (max<arr[a]){
                 max = arr[a];
             }
         }
         return max;
+    }
+    int cariMin(int[] arr){
+        int min = arr[0];
+        for(a=0;a<this.n;a++){
+            if (min>arr[a]){
+                min = arr[a];
+            }
+        }
+        return min;
     }
 	
     
