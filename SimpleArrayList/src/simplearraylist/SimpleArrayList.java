@@ -21,16 +21,16 @@ public class SimpleArrayList {
         AppArrayList app = new AppArrayList();
         while(true){
             int inp;
-            System.out.println("---- Menu Data ArrayList App ----");
-            System.out.println("1.Tambah data");
-            System.out.println("2.Cari Data");
-            System.out.println("3.Hapus Data");
-            System.out.println("4.Tampil Data");
-            System.out.println("5.Keluar");
+            print("---- Menu Data ArrayList App ----");
+            print("1.Tambah data");
+            print("2.Cari Data");
+            print("3.Hapus Data");
+            print("4.Tampil Data");
+            print("5.Keluar");
             
             Scanner input = new Scanner(System.in);
-            System.out.println("");
-            System.out.println("Pilih nomor yang diinginkan = ");
+            print("");
+            print("Pilih nomor yang diinginkan = ");
             inp = input.nextInt();
 
             switch (inp) {
@@ -47,9 +47,15 @@ public class SimpleArrayList {
                     app.Menampilkan_Data();
                     break;
                 case 5:
-                    System.out.println("Terimakasih Sudah memakai Data ArrayList App.");
+                    print("Terimakasih Sudah memakai Data ArrayList App.");
                     System.exit(0);
+                    default:
+                    print("Input Tidak Valid");
             }
+            
         }
+    }
+    static void print(String text) {
+    System.out.println(text);
     }
 }
